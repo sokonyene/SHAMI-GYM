@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shami Gym | Home</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <meta name="description" content="Shami Gym—train smarter with expert coaches, modern equipment, and community energy." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Shami Gym logo" />
+        <span>Shami Gym</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Train smarter. Feel stronger.</h1>
+        <p>Coaching, community, and clean facilities—built around your goals.</p>
+        <div class="cta-group">
+          <a class="btn btn-primary" href="services.html">View Services</a>
+          <a class="btn btn-outline" href="contact.html">Book a Free Trial</a>
+        </div>
+      </div>
+    </section>
+
+<section class="carousel" aria-label="Image carousel">
+  <div class="container slider">
+    <div class="slides">
+      <div class="slide active">
+        <img src="images/slider1.jpg" alt="Strength training area" />
+        <div class="caption">Strength training area with modern equipment</div>
+      </div>
+      <div class="slide">
+        <img src="images/slider2.jpg" alt="Group HIIT class" />
+        <div class="caption">High-energy HIIT classes that push your limits</div>
+      </div>
+      <div class="slide">
+        <img src="images/slider3.jpg" alt="Personal trainer coaching client" />
+        <div class="caption">Personal coaching tailored to your goals</div>
+      </div>
+    </div>
+    <div class="controls">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </div>
+</section>
+
+
+    <section class="intro">
+      <div class="container grid-3">
+        <article class="card">
+          <img class="icon" src="images/kelg-exercise.jpg" alt="" />
+          <h3>Expert coaches</h3>
+          <p>Certified trainers who design programs that fit your body, time, and goals.</p>
+        </article>
+        <article class="card">
+          <img class="icon" src="images/gymspace.jpg" alt="" />
+          <h3>Clean, modern space</h3>
+          <p>Well-ventilated rooms, sanitized equipment, and seamless check-ins.</p>
+        </article>
+        <article class="card">
+          <img class="icon" src="images/slider3.jpg" alt="" />
+          <h3>Community energy</h3>
+          <p>Group classes and events to keep you accountable and motivated.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Shami Gym</h4>
+        <p>Katta, Matugga, Central Region, Uganda</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="#" aria-label="Tiktok">T</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 Shami Gym. Developed by Okonyene Shawn Michael.
+    </div>
+  </footer>
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
+  let currentIndex = 0;
+  let slideInterval = setInterval(nextSlide, 4000); // 4 seconds
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+      dots[i].classList.toggle('active', i === index);
+    });
+    currentIndex = index;
+  }
+
+  function nextSlide() {
+    let newIndex = (currentIndex + 1) % slides.length;
+    showSlide(newIndex);
+  }
+
+  // Allow manual navigation
+  dots.forEach(dot => {
+    dot.addEventListener('click', () => {
+      clearInterval(slideInterval); // stop autoplay when user clicks
+      showSlide(parseInt(dot.dataset.index));
+      slideInterval = setInterval(nextSlide, 4000); // restart autoplay
+    });
+  });
+</script>
+</body>
+</html>

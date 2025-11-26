@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shami Gym | Services</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <meta name="description" content="Explore Shami Gym services: personal training, group classes, and nutrition coaching." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Shami Gym logo" />
+        <span>Shami Gym</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="active" href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Services</h1>
+        <p>Programs that meet you where you are, and take you where you want to go.</p>
+      </div>
+    </section>
+
+    <section class="services-list">
+      <div class="container grid-3">
+        <article class="card">
+          <img class="service-image" src="images/slider3.jpg" alt="Personal training session" />
+          <h3>Personal training</h3>
+          <p>One-on-one coaching with custom plans, form checks, and progress tracking.</p>
+          <ul class="ticks">
+            <li>Initial assessment</li>
+            <li>Weekly sessions</li>
+            <li>Goal-based progression</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <img class="service-image" src="images/slider2.jpg" alt="Group HIIT class" />
+          <h3>Group classes</h3>
+          <p>HIIT, strength circuits, mobility flows, and dance cardio—fun, fast, and effective.</p>
+          <ul class="ticks">
+            <li>Beginner-friendly options</li>
+            <li>Certified instructors</li>
+            <li>Flexible schedule</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <img class="service-image" src="images/slider1.jpg" alt="Nutrition coaching" />
+          <h3>Nutrition coaching</h3>
+          <p>Balanced plans and habit coaching to fuel your training and recovery.</p>
+          <ul class="ticks">
+            <li>Meal guidance</li>
+            <li>Body composition tracking</li>
+            <li>Ongoing support</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <h2>Ready to start?</h2>
+        <p>Book a free consultation and we’ll build your plan.</p>
+        <a class="btn btn-primary" href="contact.html">Book now</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Shami Gym</h4>
+        <p>Katta, Matugga, Central Region, Uganda</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="#" aria-label="Tiktok">T</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 Shami Gym. Developed by Okonyene Shawn Michael.
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

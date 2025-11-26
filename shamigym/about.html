@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shami Gym | About</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <meta name="description" content="Learn about Shami Gym—our history, mission, team, and values." />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-wrap">
+      <a class="logo" href="index.html">
+        <img src="images/logo.png" alt="Shami Gym logo" />
+        <span>Shami Gym</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a class="active" href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>About Shami Gym</h1>
+        <p>We started as a small community gym with a big mission: make fitness feel personal.</p>
+      </div>
+    </section>
+
+    <section class="history">
+      <div class="container grid-2">
+        <div>
+          <h2>Our story</h2>
+          <p>Founded in 2020, Shami Gym began with a simple idea, combine expert coaching with a welcoming space where anyone can train confidently.</p>
+          <p>Today, we serve beginners and athletes alike with programs that adapt to your lifestyle and goals.</p>
+        </div>
+        <div class="values">
+          <h2>Our values</h2>
+          <ul class="ticks">
+            <li>Integrity in coaching</li>
+            <li>Community first</li>
+            <li>Progress over perfection</li>
+            <li>Clean, safe environment</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="team">
+      <div class="container">
+        <h2>Meet the team</h2>
+        <div class="grid-3">
+          <article class="card">
+            <img class="avatar" src="images/coachA.jpg" alt="Coach A headshot placeholder" />
+            <h3>Shawn “Coach” Michael</h3>
+            <p>Head Coach, Strength & Conditioning</p>
+          </article>
+          <article class="card">
+            <img class="avatar" src="images/coachB.jpg" alt="Coach B headshot placeholder" />
+            <h3>Maggie Davisha</h3>
+            <p>Group Fitness Lead, Mobility & HIIT</p>
+          </article>
+          <article class="card">
+            <img class="avatar" src="images/coachC.jpg" alt="Coach C headshot placeholder" />
+            <h3>Hamza Male</h3>
+            <p>Nutrition Coach, Habit Change</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Shami Gym</h4>
+        <p>Katta, Matugga, Central Region, Uganda</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="#" aria-label="Tiktok">T</a>
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="X">X</a>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 Shami Gym. Developed Okonyene Shawn Michael.
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const nav = document.querySelector('.site-nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
